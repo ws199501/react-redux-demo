@@ -1,9 +1,0 @@
-node_modules
-.DS_Store
-build
-logs
-webpack-assets.json
-dist
-.idea
-jsconfig.json
-yarn.lock
