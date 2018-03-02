@@ -3,7 +3,7 @@ import { Provider } from 'react-redux'
 import configureStore from './redux/configureStore'
 
 import logo from './logo.svg';
-import './App.css';
+import './App.less';
 import Main from './main'
 
 class App extends Component {
