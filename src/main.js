@@ -10,7 +10,7 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    //发送action,经过reduce派发,改变state
+    //发送action,经过reducers派发,改变state
     this.props.actions.getUser()
   }
   componentWillReceiveProps(nextProps) {
