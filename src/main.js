@@ -3,6 +3,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { getUser, changeUser } from './redux/actions/user'
 
+console.log('connect -->', connect)
 class Home extends Component {
   constructor(props) {
     super(props)
@@ -33,12 +34,14 @@ class Home extends Component {
 }
 
 const mapStateToProps = (state) => {
+  console.log('mapStateToProps -->', state)
   return {
     user: state.user
   }
 }
 
 function mapDispatchToProps(dispatch) {
+  console.log('mapDispatchToProps -->',dispatch)
   return {
     actions: bindActionCreators({
       getUser,
